@@ -1,0 +1,232 @@
+# LITFlavor - Lithuanian Journal Entries
+# Journal entries serve as guided mission-style objectives for Lithuania,
+# covering key historical milestones and achievements of the Grand Duchy.
+
+######################################
+# Journal Entry: The Grand Duchy Ascendant
+# Covers Lithuania's rise to become the largest state in Europe.
+######################################
+journal_entry = {
+    id = lit_je_grand_duchy
+
+    title = lit_je_grand_duchy.t
+    desc = lit_je_grand_duchy.d
+    picture = "gfx/event_pictures/eu5_military.dds"
+
+    trigger = {
+        tag = LIT
+    }
+
+    task = {
+        id = lit_je_grand_duchy_task_1
+        title = lit_je_grand_duchy_task_1.t
+        desc = lit_je_grand_duchy_task_1.d
+
+        # Expand to control the major eastern territories
+        completed_when = {
+            num_of_provinces_owned_or_leased >= 30
+        }
+
+        on_completion = {
+            add_prestige = 20
+            add_country_modifier = {
+                name = lit_grand_duchy_power
+                duration = 7300
+            }
+        }
+    }
+
+    task = {
+        id = lit_je_grand_duchy_task_2
+        title = lit_je_grand_duchy_task_2.t
+        desc = lit_je_grand_duchy_task_2.d
+
+        # Secure the Baltic coast by controlling provinces in the Baltic region area
+        completed_when = {
+            any_owned_province = {
+                region = baltic_region
+            }
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                name = lit_baltic_coast_secured
+                duration = 7300
+            }
+        }
+    }
+
+    task = {
+        id = lit_je_grand_duchy_task_3
+        title = lit_je_grand_duchy_task_3.t
+        desc = lit_je_grand_duchy_task_3.d
+
+        # Defeat the Teutonic Order
+        completed_when = {
+            NOT = { exists = TEU }
+        }
+
+        on_completion = {
+            add_prestige = 30
+            add_country_modifier = {
+                name = lit_teutonic_order_defeated
+                duration = 10950
+            }
+        }
+    }
+}
+
+######################################
+# Journal Entry: The Pagan Heritage
+# Covers Lithuania's unique status as Europe's last pagan state.
+######################################
+journal_entry = {
+    id = lit_je_pagan_heritage
+
+    title = lit_je_pagan_heritage.t
+    desc = lit_je_pagan_heritage.d
+    picture = "gfx/event_pictures/eu5_religion.dds"
+
+    trigger = {
+        tag = LIT
+    }
+
+    task = {
+        id = lit_je_pagan_heritage_task_1
+        title = lit_je_pagan_heritage_task_1.t
+        desc = lit_je_pagan_heritage_task_1.d
+
+        # Preserve or convert Baltic pagan sacred sites
+        completed_when = {
+            has_country_flag = lit_flavor_mindaugas_fired
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                name = lit_pagan_heritage_preserved
+                duration = 5475
+            }
+        }
+    }
+
+    task = {
+        id = lit_je_pagan_heritage_task_2
+        title = lit_je_pagan_heritage_task_2.t
+        desc = lit_je_pagan_heritage_task_2.d
+
+        # Complete the Christianization process
+        completed_when = {
+            has_country_flag = lit_flavor_christianization_fired
+        }
+
+        on_completion = {
+            add_stability = 1
+            add_prestige = 15
+        }
+    }
+}
+
+######################################
+# Journal Entry: The Lithuanian Statute
+# Covers the development of Lithuanian law and governance.
+######################################
+journal_entry = {
+    id = lit_je_statute_of_lithuania
+
+    title = lit_je_statute_of_lithuania.t
+    desc = lit_je_statute_of_lithuania.d
+    picture = "gfx/event_pictures/eu5_diplomacy.dds"
+
+    trigger = {
+        tag = LIT
+    }
+
+    task = {
+        id = lit_je_statute_task_1
+        title = lit_je_statute_task_1.t
+        desc = lit_je_statute_task_1.d
+
+        # Establish a codified legal system
+        completed_when = {
+            has_country_flag = lit_flavor_statute_fired
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                name = lit_statute_legal_tradition
+                duration = 10950
+            }
+        }
+    }
+
+    task = {
+        id = lit_je_statute_task_2
+        title = lit_je_statute_task_2.t
+        desc = lit_je_statute_task_2.d
+
+        # Develop a strong administrative apparatus
+        completed_when = {
+            num_of_cities >= 10
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                name = lit_administrative_excellence
+                duration = 7300
+            }
+        }
+    }
+}
+
+######################################
+# Journal Entry: Amber Roads
+# Covers Lithuania's role in the Baltic amber trade.
+######################################
+journal_entry = {
+    id = lit_je_amber_roads
+
+    title = lit_je_amber_roads.t
+    desc = lit_je_amber_roads.d
+    picture = "gfx/event_pictures/eu5_trade.dds"
+
+    trigger = {
+        tag = LIT
+    }
+
+    task = {
+        id = lit_je_amber_roads_task_1
+        title = lit_je_amber_roads_task_1.t
+        desc = lit_je_amber_roads_task_1.d
+
+        # Establish amber trade monopoly
+        completed_when = {
+            has_country_flag = lit_flavor_amber_fired
+        }
+
+        on_completion = {
+            add_treasury = 100
+            add_country_modifier = {
+                name = lit_amber_trade_dominance
+                duration = 5475
+            }
+        }
+    }
+
+    task = {
+        id = lit_je_amber_roads_task_2
+        title = lit_je_amber_roads_task_2.t
+        desc = lit_je_amber_roads_task_2.d
+
+        # Accumulate wealth from trade
+        completed_when = {
+            treasury >= 200
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                name = lit_wealthy_treasury
+                duration = 3650
+            }
+        }
+    }
+}
