@@ -1,0 +1,625 @@
+﻿# ==========================================
+# Lithuania — Age 1: Traditions
+# ==========================================
+
+# Baltic pagan warrior spirit — fierce fighting tradition of the Baltic tribes
+nd_lit_pagan_warrior_spirit = {
+	age = age_1_traditions
+	potential = { has_or_had_tag = LIT }
+	requires = horse_riding_advance
+	icon = horse_riding_advance
+	army_cavalry_power = 0.1
+	land_morale_modifier = 0.05
+}
+
+# The amber road — Baltic amber routes connecting the north to Rome and beyond
+nd_lit_amber_road = {
+	age = age_1_traditions
+	potential = { has_or_had_tag = LIT }
+	requires = guilds
+	icon = guilds
+	trade_efficiency = 0.05
+	global_merchant_power = 0.05
+}
+
+# Piliakalnis network — the hill fort system defending the Baltic heartland
+nd_lit_piliakalnis_network = {
+	age = age_1_traditions
+	potential = { has_or_had_tag = LIT }
+	requires = medieval_administration
+	icon = medieval_administration
+	global_defensive = 0.1
+	fort_maintenance_cost = -0.05
+}
+
+# Forest mastery — Lithuanian guerrilla warfare in the great northern forests
+nd_lit_forest_mastery = {
+	age = age_1_traditions
+	potential = { has_or_had_tag = LIT }
+	requires = horse_riding_advance
+	icon = horse_riding_advance
+	army_movement_speed = 0.1
+	global_hostile_attrition = 0.5
+}
+
+# Gediminas towers — the Iron Wolf dream and the founding of Vilnius
+nd_lit_gediminas_towers = {
+	age = age_1_traditions
+	potential = { has_or_had_tag = LIT }
+	requires = medieval_administration
+	icon = medieval_administration
+	monthly_legitimacy = 0.05
+	monthly_prestige = 0.1
+}
+
+# Ruthenian integration — governance of the vast Ruthenian principalities
+nd_lit_ruthenian_integration = {
+	age = age_1_traditions
+	potential = { has_or_had_tag = LIT }
+	requires = organized_religion
+	icon = organized_religion
+	cultures_capacity = 1
+	global_pop_assimilation_speed_modifier = 0.1
+}
+
+# Baltic ironwork — iron smelting and metalworking traditions of the Baltic tribes
+nd_lit_baltic_ironwork = {
+	age = age_1_traditions
+	potential = { has_or_had_tag = LIT }
+	requires = guilds
+	icon = guilds
+	global_iron_output_modifier = 0.15
+	global_production_efficiency = 0.03
+}
+
+# Romuva sacred tradition — the pagan sanctuaries and rites of Baltic religion
+nd_lit_romuva_tradition = {
+	age = age_1_traditions
+	potential = { has_or_had_tag = LIT }
+	requires = organized_religion
+	icon = organized_religion
+	cultural_tradition_modifier = 0.15
+	tolerance_own = 1
+}
+
+# Nemunas river trade — commerce along the great Nemunas connecting the interior to the Baltic
+nd_lit_nemunas_trade = {
+	age = age_1_traditions
+	potential = { has_or_had_tag = LIT }
+	requires = guilds
+	icon = guilds
+	global_merchant_capacity_modifier = 0.1
+	trade_efficiency = 0.025
+}
+
+# Bajorai levy — military obligation of the Lithuanian lesser nobility
+nd_lit_bajorai_levy = {
+	age = age_1_traditions
+	potential = { has_or_had_tag = LIT }
+	requires = medieval_administration
+	icon = medieval_administration
+	army_infantry_power = 0.05
+	monthly_army_tradition = 0.05
+}
+
+# ==========================================
+# Lithuania — Age 2: Renaissance
+# ==========================================
+
+# Jogaila's baptism — Christianization of Europe's last pagan state (1387)
+nd_lit_jogaila_baptism = {
+	age = age_2_renaissance
+	potential = { has_or_had_tag = LIT }
+	requires = crown_power_advance_renaissance
+	icon = crown_power_advance_renaissance
+	tolerance_own = 1
+	clergy_estate_target_satisfaction = 0.025
+	monthly_legitimacy = 0.03
+}
+
+# Grunwald triumph — the crushing defeat of the Teutonic Knights (1410)
+nd_lit_grunwald_triumph = {
+	age = age_2_renaissance
+	potential = { has_or_had_tag = LIT }
+	requires = drill_army_advance
+	icon = drill_army_advance
+	army_infantry_power = 0.1
+	monthly_army_tradition = 0.05
+}
+
+# Vytautas at the zenith — the height of Lithuanian power under Vytautas the Great
+nd_lit_vytautas_zenith = {
+	age = age_2_renaissance
+	potential = { has_or_had_tag = LIT }
+	requires = crown_power_advance_renaissance
+	icon = crown_power_advance_renaissance
+	global_crown_estate_power = 0.1
+	country_cabinet_efficiency = 0.05
+}
+
+# Sea to sea dominion — Lithuanian expansion from the Baltic to the Black Sea
+nd_lit_sea_to_sea_dominion = {
+	age = age_2_renaissance
+	potential = { has_or_had_tag = LIT }
+	requires = drill_army_advance
+	icon = drill_army_advance
+	diplomatic_capacity = 1
+	army_cavalry_power = 0.1
+}
+
+# Vilnius cathedral — Gothic churches and the grand capital of the Lithuanian state
+nd_lit_vilnius_cathedral = {
+	age = age_2_renaissance
+	potential = { has_or_had_tag = LIT }
+	requires = vibrant_court_advance
+	icon = vibrant_court_advance
+	monthly_prestige = 0.1
+	cultural_tradition_modifier = 0.1
+}
+
+# Krewo diplomacy — the dynastic union with Poland and the Jagiellonian connection
+nd_lit_krewo_diplomacy = {
+	age = age_2_renaissance
+	potential = { has_or_had_tag = LIT }
+	requires = merchants_and_trade
+	icon = merchants_and_trade
+	diplomatic_reputation = 1
+	improve_relation_impact = 0.1
+}
+
+# Orthodox tolerance — managing the great diversity of Christian subjects
+nd_lit_orthodox_tolerance = {
+	age = age_2_renaissance
+	potential = { has_or_had_tag = LIT }
+	requires = crown_power_advance_renaissance
+	icon = crown_power_advance_renaissance
+	tolerance_heretic = 1
+	global_separatism = -0.03
+}
+
+# Samogitian spirit — the indomitable heart of Lithuania, never subdued by the Teutonic Order
+nd_lit_samogitian_spirit = {
+	age = age_2_renaissance
+	potential = { has_or_had_tag = LIT }
+	requires = drill_army_advance
+	icon = drill_army_advance
+	global_defensive = 0.1
+	land_morale_modifier = 0.05
+}
+
+# Ruthenian scribes — Orthodox manuscript tradition and Slavic scholarly culture at the Lithuanian court
+nd_lit_ruthenian_scribes = {
+	age = age_2_renaissance
+	potential = { has_or_had_tag = LIT }
+	requires = patron_of_art
+	icon = patron_of_art
+	cultural_tradition_modifier = 0.1
+	global_monthly_literacy = 0.01
+}
+
+# Riga commerce — Lithuanian commercial dominance over the Baltic trade hub
+nd_lit_riga_commerce = {
+	age = age_2_renaissance
+	potential = { has_or_had_tag = LIT }
+	requires = merchants_and_trade
+	icon = merchants_and_trade
+	trade_efficiency = 0.025
+	global_merchant_power = 0.05
+}
+
+# ==========================================
+# Lithuania — Age 3: Discovery
+# ==========================================
+
+# Lublin Union benefits — the formal Polish-Lithuanian Commonwealth and its shared institutions (1569)
+nd_lit_lublin_union_benefits = {
+	age = age_3_discovery
+	potential = { has_or_had_tag = LIT }
+	requires = merchant_power_from_maritime_discovery_advance
+	icon = merchant_power_from_maritime_discovery_advance
+	diplomatic_capacity = 1
+	legislative_efficiency = 0.05
+}
+
+# Winged hussar charge — the legendary cavalry that would electrify the battlefields of Europe
+nd_lit_winged_hussar_charge = {
+	age = age_3_discovery
+	potential = { has_or_had_tag = LIT }
+	requires = pike_square
+	icon = pike_square
+	army_cavalry_power = 0.15
+	discipline = 0.05
+}
+
+# Vilnius University founding — the Jesuit academy that became the intellectual center of the north (1579)
+nd_lit_vilnius_university_founding = {
+	age = age_3_discovery
+	potential = { has_or_had_tag = LIT }
+	requires = printing_press_advance
+	icon = printing_press_advance
+	research_speed_modifier = 0.05
+	global_monthly_literacy = 0.01
+}
+
+# Lithuanian Statute — the most advanced legal code in Renaissance Europe
+nd_lit_lithuanian_statute = {
+	age = age_3_discovery
+	potential = { has_or_had_tag = LIT }
+	requires = regulate_court_procedures
+	icon = regulate_court_procedures
+	stability_cost = -0.1
+	legislative_efficiency = 0.1
+}
+
+# Gdansk emporium — access through Gdańsk to the wider Baltic and North Sea trade networks
+nd_lit_gdansk_emporium = {
+	age = age_3_discovery
+	potential = { has_or_had_tag = LIT }
+	requires = merchant_power_from_maritime_discovery_advance
+	icon = merchant_power_from_maritime_discovery_advance
+	trade_efficiency = 0.025
+	global_merchant_capacity_modifier = 0.1
+}
+
+# Noble Sejm tradition — the elected parliament and the culture of noble democracy
+nd_lit_noble_sejm = {
+	age = age_3_discovery
+	potential = { has_or_had_tag = LIT }
+	requires = regulate_court_procedures
+	icon = regulate_court_procedures
+	diplomatic_capacity = 1
+	country_cabinet_efficiency = 0.05
+}
+
+# Brest Church Union — the Uniate church bridging Catholic and Orthodox in the borderlands (1596)
+nd_lit_brest_church_union = {
+	age = age_3_discovery
+	potential = { has_or_had_tag = LIT }
+	requires = diplomatic_training
+	icon = diplomatic_training
+	tolerance_own = 1
+	tolerance_heretic = 1
+}
+
+# Forest exports — vast primeval forests yielding timber and furs for the markets of Europe
+nd_lit_forest_exports = {
+	age = age_3_discovery
+	potential = { has_or_had_tag = LIT }
+	requires = merchant_power_from_maritime_discovery_advance
+	icon = merchant_power_from_maritime_discovery_advance
+	global_raw_material_output = 0.1
+	global_production_efficiency = 0.03
+}
+
+# Steppe frontier defense — holding the vast eastern frontier against Tatar raiders
+nd_lit_steppe_frontier_defense = {
+	age = age_3_discovery
+	potential = { has_or_had_tag = LIT }
+	requires = pike_square
+	icon = pike_square
+	global_defensive = 0.1
+	global_garrison_size_modifier = 0.15
+}
+
+# Reformation refuge — Lithuania as sanctuary for Calvinists, Arians, and religious dissenters
+nd_lit_reformation_refuge = {
+	age = age_3_discovery
+	potential = { has_or_had_tag = LIT }
+	requires = printing_press_advance
+	icon = printing_press_advance
+	tolerance_heretic = 1
+	global_monthly_literacy = 0.01
+}
+
+# ==========================================
+# Lithuania — Age 4: Reformation
+# ==========================================
+
+# Confessional coexistence — the remarkable tradition of multi-faith tolerance in the Commonwealth
+nd_lit_confessional_coexistence = {
+	age = age_4_reformation
+	potential = { has_or_had_tag = LIT }
+	requires = confessional_court
+	icon = confessional_court
+	tolerance_heretic = 1
+	tolerance_own = 1
+	global_separatism = -0.05
+}
+
+# Kircholm hussars — the winged hussars at the apex of their power, shattering Swedish armies (1605)
+nd_lit_kircholm_hussars = {
+	age = age_4_reformation
+	potential = { has_or_had_tag = LIT }
+	requires = leader_recruit_cost_advance
+	icon = leader_recruit_cost_advance
+	army_cavalry_power = 0.15
+	monthly_army_tradition = 0.05
+}
+
+# Third Lithuanian Statute — the most sophisticated legal code of Renaissance Europe (1588)
+nd_lit_third_statute = {
+	age = age_4_reformation
+	potential = { has_or_had_tag = LIT }
+	requires = gov_reform_reformation_a
+	icon = gov_reform_reformation_a
+	legislative_efficiency = 0.1
+	stability_cost = -0.1
+}
+
+# Magnate splendor — the great noble houses as patrons of baroque art and architecture
+nd_lit_magnate_splendor = {
+	age = age_4_reformation
+	potential = { has_or_had_tag = LIT }
+	requires = pop_promotion_speed_age_4
+	icon = pop_promotion_speed_age_4
+	cultural_tradition_modifier = 0.15
+	monthly_prestige = 0.1
+}
+
+# Jesuit academies — Counter-Reformation schools spreading learning and Catholicism together
+nd_lit_jesuit_academies = {
+	age = age_4_reformation
+	potential = { has_or_had_tag = LIT }
+	requires = confessional_court
+	icon = confessional_court
+	research_speed_modifier = 0.05
+	clergy_estate_target_satisfaction = 0.025
+}
+
+# Hetman command — the Grand Hetman's supreme military authority over the Commonwealth's armies
+nd_lit_hetman_command = {
+	age = age_4_reformation
+	potential = { has_or_had_tag = LIT }
+	requires = leader_recruit_cost_advance
+	icon = leader_recruit_cost_advance
+	discipline = 0.05
+	monthly_army_tradition = 0.05
+}
+
+# Lwów crossroads — the great trading city of Lwów connecting East and West
+nd_lit_lwow_crossroads = {
+	age = age_4_reformation
+	potential = { has_or_had_tag = LIT }
+	requires = global_trade_advance
+	icon = global_trade_advance
+	trade_efficiency = 0.025
+	global_merchant_power = 0.1
+}
+
+# Golden Liberty — the noble democracy that made the Commonwealth unique among European powers
+nd_lit_golden_liberty = {
+	age = age_4_reformation
+	potential = { has_or_had_tag = LIT }
+	requires = gov_reform_reformation_a
+	icon = gov_reform_reformation_a
+	diplomatic_reputation = 1
+	country_cabinet_efficiency = 0.05
+}
+
+# Zaporozhian alliance — cooperation with the Cossack host guarding the steppe frontier
+nd_lit_zaporozhian_alliance = {
+	age = age_4_reformation
+	potential = { has_or_had_tag = LIT }
+	requires = leader_recruit_cost_advance
+	icon = leader_recruit_cost_advance
+	global_manpower_modifier = 0.1
+	army_cavalry_power = 0.05
+}
+
+# Eastern bulwark — Lithuania as the shield of Western Christendom against Muscovy and the Tatars
+nd_lit_eastern_bulwark = {
+	age = age_4_reformation
+	potential = { has_or_had_tag = LIT }
+	requires = imperial_ambitions
+	icon = imperial_ambitions
+	global_defensive = 0.15
+	fort_maintenance_cost = -0.1
+}
+
+# ==========================================
+# Lithuania — Age 5: Absolutism
+# ==========================================
+
+# Deluge recovery — rebuilding after the catastrophic Swedish and Russian invasions (1655–1660)
+nd_lit_deluge_recovery = {
+	age = age_5_absolutism
+	potential = { has_or_had_tag = LIT }
+	requires = construction_speed_absolutism
+	icon = construction_speed_absolutism
+	global_monthly_prosperity = 0.0015
+	stability_cost = -0.1
+}
+
+# Hetmanate reform — military and administrative reforms under the Grand Hetman's office
+nd_lit_hetmanate_reform = {
+	age = age_5_absolutism
+	potential = { has_or_had_tag = LIT }
+	requires = absolutism_agressive_advance
+	icon = absolutism_agressive_advance
+	country_cabinet_efficiency = 0.1
+	global_crown_estate_power = 0.1
+}
+
+# Hussar modernization — adapting the iconic cavalry for the age of gunpowder
+nd_lit_hussar_modernization = {
+	age = age_5_absolutism
+	potential = { has_or_had_tag = LIT }
+	requires = absolutism_agressive_advance
+	icon = absolutism_agressive_advance
+	army_cavalry_power = 0.1
+	army_movement_speed = 0.1
+}
+
+# Grand Hetman's authority — the supreme command structure of the Commonwealth's armed forces
+nd_lit_grand_hetman_authority = {
+	age = age_5_absolutism
+	potential = { has_or_had_tag = LIT }
+	requires = absolute_rulership
+	icon = absolute_rulership
+	monthly_army_tradition = 0.05
+	discipline = 0.05
+}
+
+# Folwark grain economy — the manorial estate system producing grain for Baltic export
+nd_lit_folwark_economy = {
+	age = age_5_absolutism
+	potential = { has_or_had_tag = LIT }
+	requires = construction_speed_absolutism
+	icon = construction_speed_absolutism
+	global_production_efficiency = 0.05
+	tax_income_efficiency = 0.03
+}
+
+# Commission of National Education — the world's first state ministry of education (1773)
+nd_lit_education_commission = {
+	age = age_5_absolutism
+	potential = { has_or_had_tag = LIT }
+	requires = the_constitution
+	icon = the_constitution
+	research_speed_modifier = 0.075
+	global_monthly_literacy = 0.015
+}
+
+# Magnate private armies — powerful noble houses maintaining their own military forces
+nd_lit_magnate_private_armies = {
+	age = age_5_absolutism
+	potential = { has_or_had_tag = LIT }
+	requires = absolute_rulership
+	icon = absolute_rulership
+	global_manpower_modifier = 0.1
+	army_movement_speed = 0.05
+}
+
+# Grodno constitutional reform — parliamentary reform attempts at the Grodno Sejm
+nd_lit_grodno_reform = {
+	age = age_5_absolutism
+	potential = { has_or_had_tag = LIT }
+	requires = the_constitution
+	icon = the_constitution
+	legislative_efficiency = 0.1
+	country_cabinet_efficiency = 0.05
+}
+
+# Sarmatian culture — the unique noble culture blending Lithuanian, Polish, and Eastern traditions
+nd_lit_sarmatian_culture = {
+	age = age_5_absolutism
+	potential = { has_or_had_tag = LIT }
+	requires = construction_speed_absolutism
+	icon = construction_speed_absolutism
+	cultural_tradition_modifier = 0.15
+	monthly_prestige = 0.1
+}
+
+# Vistula trade network — Lithuanian grain and timber flowing down the Vistula to Gdańsk and the world
+nd_lit_vistula_trade = {
+	age = age_5_absolutism
+	potential = { has_or_had_tag = LIT }
+	requires = construction_speed_absolutism
+	icon = construction_speed_absolutism
+	trade_efficiency = 0.025
+	global_merchant_capacity_modifier = 0.1
+}
+
+# ==========================================
+# Lithuania — Age 6: Revolutions
+# ==========================================
+
+# Constitution of May Third — the first modern constitution in Europe, born of Lithuanian patriotism (1791)
+nd_lit_may_constitution = {
+	age = age_6_revolutions
+	potential = { has_or_had_tag = LIT }
+	requires = rights_of_man
+	icon = rights_of_man
+	legislative_efficiency = 0.15
+	country_cabinet_efficiency = 0.1
+}
+
+# Kościuszko uprising — the national insurrection that lit the flame of Lithuanian patriotism (1794)
+nd_lit_kosciuszko_uprising = {
+	age = age_6_revolutions
+	potential = { has_or_had_tag = LIT }
+	requires = napoleonic_warfare
+	icon = napoleonic_warfare
+	land_morale_modifier = 0.1
+	global_manpower_modifier = 0.1
+}
+
+# National awakening — the rediscovery of Lithuanian language, heritage, and Baltic identity
+nd_lit_national_awakening = {
+	age = age_6_revolutions
+	potential = { has_or_had_tag = LIT }
+	requires = enlightened_court
+	icon = enlightened_court
+	cultural_tradition_modifier = 0.2
+	global_monthly_literacy = 0.02
+}
+
+# Amber industry — industrial-scale processing and export of Baltic amber
+nd_lit_amber_industry = {
+	age = age_6_revolutions
+	potential = { has_or_had_tag = LIT }
+	requires = industrialization_advance
+	icon = industrialization_advance
+	global_production_efficiency = 0.05
+	trade_efficiency = 0.025
+}
+
+# Vilnius cultural revival — the city reborn as a center of Romantic literature and national consciousness
+nd_lit_vilnius_revival = {
+	age = age_6_revolutions
+	potential = { has_or_had_tag = LIT }
+	requires = enlightened_court
+	icon = enlightened_court
+	monthly_prestige = 0.1
+	num_possible_artists = 1
+}
+
+# Serf emancipation — the liberation of the peasantry and the birth of a free Lithuanian citizenry
+nd_lit_serf_emancipation = {
+	age = age_6_revolutions
+	potential = { has_or_had_tag = LIT }
+	requires = rights_of_man
+	icon = rights_of_man
+	global_population_growth = 0.001
+	global_monthly_prosperity = 0.0015
+}
+
+# Forest riflemen — the Lithuanian sharpshooter tradition born in the great northern forests
+nd_lit_forest_riflemen = {
+	age = age_6_revolutions
+	potential = { has_or_had_tag = LIT }
+	requires = napoleonic_warfare
+	icon = napoleonic_warfare
+	army_infantry_power = 0.1
+	discipline = 0.05
+}
+
+# Baltic national identity — the assertion of a distinct Lithuanian identity against assimilation
+nd_lit_baltic_identity = {
+	age = age_6_revolutions
+	potential = { has_or_had_tag = LIT }
+	requires = enlightened_court
+	icon = enlightened_court
+	cultural_tradition_modifier = 0.15
+	cultures_capacity = 2
+}
+
+# Timber industry — industrial-scale harvesting of the great Lithuanian forests for shipbuilding and construction
+nd_lit_timber_industry = {
+	age = age_6_revolutions
+	potential = { has_or_had_tag = LIT }
+	requires = industrialization_advance
+	icon = industrialization_advance
+	global_raw_material_output = 0.1
+	global_construction_speed = 0.1
+}
+
+# Citizen army — universal military service: every free Lithuanian a soldier of the fatherland
+nd_lit_citizen_army = {
+	age = age_6_revolutions
+	potential = { has_or_had_tag = LIT }
+	requires = napoleonic_warfare
+	icon = napoleonic_warfare
+	global_manpower_modifier = 0.15
+	land_morale_modifier = 0.1
+}
