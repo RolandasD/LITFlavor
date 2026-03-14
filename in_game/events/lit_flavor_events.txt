@@ -1,0 +1,457 @@
+# LITFlavor - Lithuanian Flavor Events
+# Extends flavor for the Grand Duchy of Lithuania in EU5.
+# Covers historical events from the medieval period through the early modern era.
+
+namespace = lit_flavor
+
+######################################
+# Event 1: The Legacy of Mindaugas
+# Historical context: Mindaugas was the only King of Lithuania,
+# baptized in 1251, but later renounced Christianity.
+######################################
+event = {
+    id = lit_flavor.1
+    title = lit_flavor.1.t
+    desc = lit_flavor.1.d
+    picture = "gfx/event_pictures/eu5_throne_room.dds"
+
+    type = country_event
+    hidden = no
+    fire_only_once = yes
+
+    trigger = {
+        tag = LIT
+        NOT = { has_country_flag = lit_flavor_mindaugas_fired }
+    }
+
+    weight_multiplier = {
+        base = 1
+    }
+
+    option = {
+        name = lit_flavor.1.a
+        # Embrace Christian heritage to boost relations with Catholic neighbors
+        add_country_modifier = {
+            name = lit_mindaugas_christian_legacy
+            duration = 3650
+        }
+        set_country_flag = lit_flavor_mindaugas_fired
+    }
+    option = {
+        name = lit_flavor.1.b
+        # Reaffirm Baltic pagan traditions to boost national identity
+        add_country_modifier = {
+            name = lit_mindaugas_pagan_legacy
+            duration = 3650
+        }
+        set_country_flag = lit_flavor_mindaugas_fired
+    }
+}
+
+######################################
+# Event 2: The Christianization of Lithuania
+# Historical context: Lithuania was the last pagan state in Europe,
+# officially Christianized in 1387 under Jogaila.
+######################################
+event = {
+    id = lit_flavor.2
+    title = lit_flavor.2.t
+    desc = lit_flavor.2.d
+    picture = "gfx/event_pictures/eu5_religion.dds"
+
+    type = country_event
+    hidden = no
+    fire_only_once = yes
+
+    trigger = {
+        tag = LIT
+        has_state_religion = catholic
+        NOT = { has_country_flag = lit_flavor_christianization_fired }
+    }
+
+    weight_multiplier = {
+        base = 1
+    }
+
+    option = {
+        name = lit_flavor.2.a
+        # Build churches and establish ecclesiastical structure
+        add_stability = 1
+        add_country_modifier = {
+            name = lit_christianization_completed
+            duration = 7300
+        }
+        set_country_flag = lit_flavor_christianization_fired
+    }
+    option = {
+        name = lit_flavor.2.b
+        # Allow a slower, more organic conversion
+        add_prestige = 10
+        add_country_modifier = {
+            name = lit_gradual_conversion
+            duration = 5475
+        }
+        set_country_flag = lit_flavor_christianization_fired
+    }
+}
+
+######################################
+# Event 3: Vytautas the Great
+# Historical context: Grand Duke Vytautas (1401-1430) expanded Lithuania
+# to its greatest extent, from the Baltic to the Black Sea.
+######################################
+event = {
+    id = lit_flavor.3
+    title = lit_flavor.3.t
+    desc = lit_flavor.3.d
+    picture = "gfx/event_pictures/eu5_military.dds"
+
+    type = country_event
+    hidden = no
+    fire_only_once = yes
+
+    trigger = {
+        tag = LIT
+        NOT = { has_country_flag = lit_flavor_vytautas_fired }
+    }
+
+    weight_multiplier = {
+        base = 1
+    }
+
+    option = {
+        name = lit_flavor.3.a
+        # Military expansion - push to the Black Sea
+        add_country_modifier = {
+            name = lit_vytautas_military_glory
+            duration = 5475
+        }
+        add_prestige = 20
+        set_country_flag = lit_flavor_vytautas_fired
+    }
+    option = {
+        name = lit_flavor.3.b
+        # Consolidate existing territories and invest in administration
+        add_country_modifier = {
+            name = lit_vytautas_consolidation
+            duration = 5475
+        }
+        add_stability = 1
+        set_country_flag = lit_flavor_vytautas_fired
+    }
+}
+
+######################################
+# Event 4: The Battle of Grunwald
+# Historical context: The 1410 victory over the Teutonic Knights
+# ended their expansionist threat and secured the Baltic coastline.
+######################################
+event = {
+    id = lit_flavor.4
+    title = lit_flavor.4.t
+    desc = lit_flavor.4.d
+    picture = "gfx/event_pictures/eu5_battle.dds"
+
+    type = country_event
+    hidden = no
+    fire_only_once = yes
+
+    trigger = {
+        tag = LIT
+        NOT = { has_country_flag = lit_flavor_grunwald_fired }
+        war_with = TEU
+    }
+
+    weight_multiplier = {
+        base = 1
+    }
+
+    option = {
+        name = lit_flavor.4.a
+        # Celebrate the great victory
+        add_country_modifier = {
+            name = lit_grunwald_victory_glory
+            duration = 3650
+        }
+        add_prestige = 25
+        set_country_flag = lit_flavor_grunwald_fired
+    }
+    option = {
+        name = lit_flavor.4.b
+        # Use the victory to negotiate favorable peace terms
+        add_stability = 1
+        add_prestige = 10
+        set_country_flag = lit_flavor_grunwald_fired
+    }
+}
+
+######################################
+# Event 5: The Statute of Lithuania
+# Historical context: The three Lithuanian Statutes (1529, 1566, 1588)
+# were advanced legal codes that codified Lithuanian law.
+######################################
+event = {
+    id = lit_flavor.5
+    title = lit_flavor.5.t
+    desc = lit_flavor.5.d
+    picture = "gfx/event_pictures/eu5_diplomacy.dds"
+
+    type = country_event
+    hidden = no
+    fire_only_once = yes
+
+    trigger = {
+        tag = LIT
+        NOT = { has_country_flag = lit_flavor_statute_fired }
+    }
+
+    weight_multiplier = {
+        base = 1
+    }
+
+    option = {
+        name = lit_flavor.5.a
+        # Promulgate the Statute to strengthen noble rights
+        add_country_modifier = {
+            name = lit_statute_noble_rights
+            duration = 7300
+        }
+        set_country_flag = lit_flavor_statute_fired
+    }
+    option = {
+        name = lit_flavor.5.b
+        # Emphasize centralized justice and royal authority
+        add_country_modifier = {
+            name = lit_statute_royal_law
+            duration = 7300
+        }
+        set_country_flag = lit_flavor_statute_fired
+    }
+}
+
+######################################
+# Event 6: The Baltic Amber Trade
+# Historical context: Lithuania controlled a significant portion
+# of the amber trade routes from the Baltic to the Mediterranean.
+######################################
+event = {
+    id = lit_flavor.6
+    title = lit_flavor.6.t
+    desc = lit_flavor.6.d
+    picture = "gfx/event_pictures/eu5_trade.dds"
+
+    type = country_event
+    hidden = no
+    fire_only_once = yes
+
+    trigger = {
+        tag = LIT
+        NOT = { has_country_flag = lit_flavor_amber_fired }
+    }
+
+    weight_multiplier = {
+        base = 1
+    }
+
+    option = {
+        name = lit_flavor.6.a
+        # Invest in amber trade infrastructure
+        add_country_modifier = {
+            name = lit_amber_trade_routes
+            duration = 5475
+        }
+        add_treasury = 50
+        set_country_flag = lit_flavor_amber_fired
+    }
+    option = {
+        name = lit_flavor.6.b
+        # Establish a royal monopoly on amber export
+        add_country_modifier = {
+            name = lit_amber_royal_monopoly
+            duration = 5475
+        }
+        add_treasury = 75
+        set_country_flag = lit_flavor_amber_fired
+    }
+}
+
+######################################
+# Event 7: The Vilnius Foundation
+# Historical context: Vilnius (Wilno) became the capital of the Grand
+# Duchy. According to legend, Grand Duke Gediminas dreamed of an iron
+# wolf howling near a hill where he founded the city.
+######################################
+event = {
+    id = lit_flavor.7
+    title = lit_flavor.7.t
+    desc = lit_flavor.7.d
+    picture = "gfx/event_pictures/eu5_city.dds"
+
+    type = country_event
+    hidden = no
+    fire_only_once = yes
+
+    trigger = {
+        tag = LIT
+        NOT = { has_country_flag = lit_flavor_vilnius_fired }
+    }
+
+    weight_multiplier = {
+        base = 1
+    }
+
+    option = {
+        name = lit_flavor.7.a
+        # Invest in Vilnius as a center of culture and learning
+        add_country_modifier = {
+            name = lit_vilnius_cultural_hub
+            duration = 10950
+        }
+        set_country_flag = lit_flavor_vilnius_fired
+    }
+    option = {
+        name = lit_flavor.7.b
+        # Fortify Vilnius as a military stronghold
+        add_country_modifier = {
+            name = lit_vilnius_fortress_capital
+            duration = 10950
+        }
+        set_country_flag = lit_flavor_vilnius_fired
+    }
+}
+
+######################################
+# Event 8: The Ruthenian Nobles
+# Historical context: As Lithuania expanded eastward, many Ruthenian
+# (Ukrainian/Belarusian) Orthodox nobles joined the Lithuanian nobility.
+######################################
+event = {
+    id = lit_flavor.8
+    title = lit_flavor.8.t
+    desc = lit_flavor.8.d
+    picture = "gfx/event_pictures/eu5_diplomacy.dds"
+
+    type = country_event
+    hidden = no
+    fire_only_once = yes
+
+    trigger = {
+        tag = LIT
+        NOT = { has_country_flag = lit_flavor_ruthenian_fired }
+    }
+
+    weight_multiplier = {
+        base = 1
+    }
+
+    option = {
+        name = lit_flavor.8.a
+        # Integrate Ruthenian nobles into the Lithuanian nobility
+        add_country_modifier = {
+            name = lit_ruthenian_integration
+            duration = 7300
+        }
+        set_country_flag = lit_flavor_ruthenian_fired
+    }
+    option = {
+        name = lit_flavor.8.b
+        # Maintain a distinct Lithuanian noble class
+        add_country_modifier = {
+            name = lit_lithuanian_noble_class
+            duration = 7300
+        }
+        set_country_flag = lit_flavor_ruthenian_fired
+    }
+}
+
+######################################
+# Event 9: The Reformation in Lithuania
+# Historical context: Protestantism spread rapidly through Lithuania
+# in the 16th century, especially Calvinism among the nobility,
+# before the Counter-Reformation reasserted Catholic dominance.
+######################################
+event = {
+    id = lit_flavor.9
+    title = lit_flavor.9.t
+    desc = lit_flavor.9.d
+    picture = "gfx/event_pictures/eu5_religion.dds"
+
+    type = country_event
+    hidden = no
+    fire_only_once = yes
+
+    trigger = {
+        tag = LIT
+        NOT = { has_country_flag = lit_flavor_reformation_fired }
+        has_state_religion = catholic
+    }
+
+    weight_multiplier = {
+        base = 1
+    }
+
+    option = {
+        name = lit_flavor.9.a
+        # Resist the Reformation and support the Counter-Reformation
+        add_country_modifier = {
+            name = lit_counter_reformation
+            duration = 5475
+        }
+        set_country_flag = lit_flavor_reformation_fired
+    }
+    option = {
+        name = lit_flavor.9.b
+        # Allow noble freedom of religion, embracing tolerance
+        add_country_modifier = {
+            name = lit_religious_tolerance
+            duration = 5475
+        }
+        set_country_flag = lit_flavor_reformation_fired
+    }
+}
+
+######################################
+# Event 10: The Iron Wolf Dream of Gediminas
+# Historical context: Grand Duke Gediminas reportedly dreamed of an
+# iron wolf standing on a hill, which a pagan priest interpreted as
+# a sign to build a great city — Vilnius.
+######################################
+event = {
+    id = lit_flavor.10
+    title = lit_flavor.10.t
+    desc = lit_flavor.10.d
+    picture = "gfx/event_pictures/eu5_throne_room.dds"
+
+    type = country_event
+    hidden = no
+    fire_only_once = yes
+
+    trigger = {
+        tag = LIT
+        NOT = { has_country_flag = lit_flavor_iron_wolf_fired }
+    }
+
+    weight_multiplier = {
+        base = 1
+    }
+
+    option = {
+        name = lit_flavor.10.a
+        # Heed the omen and found a new capital
+        add_prestige = 15
+        add_country_modifier = {
+            name = lit_iron_wolf_omen
+            duration = 5475
+        }
+        set_country_flag = lit_flavor_iron_wolf_fired
+    }
+    option = {
+        name = lit_flavor.10.b
+        # Dismiss the dream and focus on military consolidation
+        add_country_modifier = {
+            name = lit_practical_expansion
+            duration = 3650
+        }
+        set_country_flag = lit_flavor_iron_wolf_fired
+    }
+}

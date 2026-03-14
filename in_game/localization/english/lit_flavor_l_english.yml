@@ -1,0 +1,155 @@
+l_english:
+ # ============================================================
+ # LITFlavor - Lithuanian Flavor Mod
+ # English Localization
+ # ============================================================
+
+ # ============================================================
+ # EVENT TITLES
+ # ============================================================
+ lit_flavor.1.t: "The Legacy of Mindaugas"
+ lit_flavor.2.t: "The Christianization of Lithuania"
+ lit_flavor.3.t: "Vytautas the Great"
+ lit_flavor.4.t: "The Battle of Grunwald"
+ lit_flavor.5.t: "The Statute of Lithuania"
+ lit_flavor.6.t: "The Baltic Amber Trade"
+ lit_flavor.7.t: "The Iron Wolf of Vilnius"
+ lit_flavor.8.t: "The Ruthenian Nobles"
+ lit_flavor.9.t: "The Reformation in Lithuania"
+ lit_flavor.10.t: "The Dream of Gediminas"
+
+ # ============================================================
+ # EVENT DESCRIPTIONS
+ # ============================================================
+ lit_flavor.1.d: "Mindaugas, the only King of Lithuania, forged a realm from the Baltic tribes and briefly embraced Christianity before returning to the old gods. His legacy remains a double-edged sword — a connection to the Christian world and a reminder of our ancient pagan roots. How shall we honor his memory?"
+ lit_flavor.2.d: "Lithuania stands as the last bastion of Baltic paganism in a Christianized Europe. The pressure from the Teutonic Knights, Poland, and the Pope grows ever greater. Grand Duke Jogaila has chosen the path of conversion to seal the union with Poland. Now we must build a truly Christian Lithuania — but how quickly, and at what cost?"
+ lit_flavor.3.d: "Vytautas the Great, Grand Duke of Lithuania, has extended our realm from the Baltic Sea to the shores of the Black Sea. Under his iron will, the Grand Duchy has reached its greatest territorial extent. Yet such vast lands require either iron discipline or a careful hand. How shall we govern this sprawling empire?"
+ lit_flavor.4.d: "The combined forces of Lithuania and Poland have shattered the Teutonic Knights at the fields of Grunwald. The flower of the Teutonic Order lies dead upon the battlefield. This decisive victory has broken the Order's power and secured our western borders for generations. How shall we capitalize on this triumph?"
+ lit_flavor.5.d: "Lithuania's legal traditions have long been an oral heritage passed down by the noble families. Our scholars and jurists now propose codifying our laws into a written Statute — a legal code that would be among the most advanced in Europe. This code shall define rights, obligations, and justice for all subjects of the Grand Duchy."
+ lit_flavor.6.d: "The amber that washes upon the Baltic shores has been traded since ancient times — prized by Romans, Byzantines, and now the merchants of the great trading cities. Lithuania sits astride the ancient amber roads, and our control of these routes could bring great wealth to our treasury. How shall we manage this precious resource?"
+ lit_flavor.7.d: "Gediminas, Grand Duke of Lithuania, has chosen the hill at the confluence of the Vilnia and Neris rivers as the site of a new city. According to the legend, a dream of an iron wolf howling upon the hill was interpreted by the pagan high priest Lizdeika as an omen of a great future city whose fame would echo throughout the world. Vilnius shall be the jewel of our realm."
+ lit_flavor.8.d: "As our armies have pushed eastward into the Ruthenian lands, many Orthodox nobles have bent the knee to Lithuanian rule. These Ruthenian boyars bring with them their faith, their culture, and their administrative traditions. They are numerous and influential — how shall we integrate them into the fabric of Lithuanian governance?"
+ lit_flavor.9.d: "The winds of the Reformation blow through Europe, and Lithuania is not immune. Many of our greatest noble families have embraced Calvinist and Lutheran ideas. The Radziwill family, among the most powerful in the realm, are ardent Protestants. Rome presses us to act, but our nobles jealously guard their religious freedoms."
+ lit_flavor.10.d: "In the night, Grand Duke Gediminas dreamed of a great iron wolf standing upon a hill, howling at the moon with the sound of a thousand wolves. When he awoke, he summoned the pagan high priest Lizdeika, who interpreted the dream: 'What is destined for the ruler of all Lithuania, shall be!' This place is destined for a great city that shall be the capital of Lithuanian lands."
+
+ # ============================================================
+ # EVENT OPTIONS
+ # ============================================================
+
+ # Event 1: Mindaugas
+ lit_flavor.1.a: "We shall honor his Christian baptism and look to the West."
+ lit_flavor.1.b: "We shall honor his return to the old gods and our Baltic heritage."
+
+ # Event 2: Christianization
+ lit_flavor.2.a: "Build churches and establish the Church throughout the realm."
+ lit_flavor.2.b: "Allow a gradual, organic conversion of the people."
+
+ # Event 3: Vytautas
+ lit_flavor.3.a: "Continue expanding southward toward the Black Sea."
+ lit_flavor.3.b: "Consolidate our vast territories and invest in governance."
+
+ # Event 4: Grunwald
+ lit_flavor.4.a: "Celebrate this great victory — Lithuania is mighty!"
+ lit_flavor.4.b: "Use this victory to negotiate a favorable peace."
+
+ # Event 5: Statute
+ lit_flavor.5.a: "Promulgate the Statute, enshrining noble rights and privileges."
+ lit_flavor.5.b: "Emphasize royal authority and centralized justice."
+
+ # Event 6: Amber
+ lit_flavor.6.a: "Invest in amber trade infrastructure and merchant networks."
+ lit_flavor.6.b: "Establish a royal monopoly on amber extraction and export."
+
+ # Event 7: Vilnius
+ lit_flavor.7.a: "Make Vilnius a center of culture, learning, and trade."
+ lit_flavor.7.b: "Fortify Vilnius as an impregnable military stronghold."
+
+ # Event 8: Ruthenian Nobles
+ lit_flavor.8.a: "Integrate the Ruthenian nobles fully into the Lithuanian state."
+ lit_flavor.8.b: "Maintain a distinct Lithuanian noble class above the Ruthenians."
+
+ # Event 9: Reformation
+ lit_flavor.9.a: "Support the Counter-Reformation — defend the Catholic faith."
+ lit_flavor.9.b: "Allow noble freedom of religion, embracing a tolerant realm."
+
+ # Event 10: Iron Wolf
+ lit_flavor.10.a: "Heed the omen — found the new capital upon this sacred hill."
+ lit_flavor.10.b: "Dismiss the dream and focus on military consolidation."
+
+ # ============================================================
+ # JOURNAL ENTRY TITLES & DESCRIPTIONS
+ # ============================================================
+
+ # Journal Entry: Grand Duchy
+ lit_je_grand_duchy.t: "The Grand Duchy Ascendant"
+ lit_je_grand_duchy.d: "The Grand Duchy of Lithuania has grown from a small Baltic duchy into one of Europe's largest realms. To cement our place among the great powers, we must expand our territories, secure our coastline, and break the power of the Teutonic Order once and for all."
+
+ lit_je_grand_duchy_task_1.t: "Lords of the East"
+ lit_je_grand_duchy_task_1.d: "Expand our realm to encompass at least thirty provinces, bringing the Ruthenian and Baltic lands under Lithuanian rule."
+
+ lit_je_grand_duchy_task_2.t: "Guardians of the Baltic"
+ lit_je_grand_duchy_task_2.d: "Secure Lithuania's access to the Baltic coast, ensuring we are never landlocked by our enemies."
+
+ lit_je_grand_duchy_task_3.t: "End of the Teutonic Order"
+ lit_je_grand_duchy_task_3.d: "The Teutonic Order has been a thorn in our side for generations. Crush them entirely and end their crusading threat to Lithuania forever."
+
+ # Journal Entry: Pagan Heritage
+ lit_je_pagan_heritage.t: "The Old Ways and the New Faith"
+ lit_je_pagan_heritage.d: "Lithuania stands at a crossroads between the ancient Baltic pagan faith and the Christian world that surrounds it. How we navigate this transition will shape the character of our realm for centuries to come."
+
+ lit_je_pagan_heritage_task_1.t: "The Memory of Mindaugas"
+ lit_je_pagan_heritage_task_1.d: "Address the legacy of King Mindaugas — Lithuania's only crowned king — and decide how his memory shall be honored in our realm."
+
+ lit_je_pagan_heritage_task_2.t: "A Christian Kingdom"
+ lit_je_pagan_heritage_task_2.d: "Complete the process of Christianization, bringing Lithuania fully into the community of Christian nations."
+
+ # Journal Entry: Statute
+ lit_je_statute_of_lithuania.t: "The Lithuanian Statute"
+ lit_je_statute_of_lithuania.d: "Among all the states of Europe, few can boast a legal code as enlightened as what our scholars propose. The Lithuanian Statute shall codify our laws and define justice for all subjects of the Grand Duchy — a monument to Lithuanian civilization."
+
+ lit_je_statute_task_1.t: "Laws Written in Stone"
+ lit_je_statute_task_1.d: "Promulgate the Lithuanian Statute, establishing a codified legal system throughout the realm."
+
+ lit_je_statute_task_2.t: "Cities of the Law"
+ lit_je_statute_task_2.d: "Develop at least ten cities across our realm to serve as centers of governance and justice."
+
+ # Journal Entry: Amber Roads
+ lit_je_amber_roads.t: "The Amber Roads"
+ lit_je_amber_roads.d: "Since ancient times, the amber of the Baltic shores has been the currency of civilization — traded from the cold northern sea to the warm Mediterranean. Lithuania sits at the heart of these ancient routes. Mastering the amber trade shall fill our treasury and fund our ambitions."
+
+ lit_je_amber_roads_task_1.t: "Masters of Amber"
+ lit_je_amber_roads_task_1.d: "Establish Lithuanian dominance over the Baltic amber trade, controlling extraction and export."
+
+ lit_je_amber_roads_task_2.t: "A Prosperous Treasury"
+ lit_je_amber_roads_task_2.d: "Accumulate at least 200 ducats in the treasury through the fruits of trade and amber commerce."
+
+ # ============================================================
+ # MODIFIER NAMES
+ # ============================================================
+ lit_mindaugas_christian_legacy: "Legacy of Mindaugas: Christian Heritage"
+ lit_mindaugas_pagan_legacy: "Legacy of Mindaugas: Baltic Roots"
+ lit_christianization_completed: "The Christianization of Lithuania"
+ lit_gradual_conversion: "Organic Conversion of the Realm"
+ lit_vytautas_military_glory: "Age of Vytautas: Military Supremacy"
+ lit_vytautas_consolidation: "Age of Vytautas: Administrative Consolidation"
+ lit_grunwald_victory_glory: "Victory of Grunwald"
+ lit_statute_noble_rights: "Statute of Lithuania: Noble Privileges"
+ lit_statute_royal_law: "Statute of Lithuania: Royal Authority"
+ lit_amber_trade_routes: "Baltic Amber Trade Networks"
+ lit_amber_royal_monopoly: "Royal Amber Monopoly"
+ lit_vilnius_cultural_hub: "Vilnius: Cultural Capital"
+ lit_vilnius_fortress_capital: "Vilnius: Fortress of the East"
+ lit_ruthenian_integration: "Ruthenian Noble Integration"
+ lit_lithuanian_noble_class: "Lithuanian Noble Supremacy"
+ lit_counter_reformation: "Counter-Reformation in Lithuania"
+ lit_religious_tolerance: "Noble Freedom of Religion"
+ lit_iron_wolf_omen: "Omen of the Iron Wolf"
+ lit_practical_expansion: "Pragmatic Military Expansion"
+ lit_grand_duchy_power: "Power of the Grand Duchy"
+ lit_baltic_coast_secured: "Baltic Coast Secured"
+ lit_teutonic_order_defeated: "Teutonic Order Crushed"
+ lit_pagan_heritage_preserved: "Baltic Pagan Heritage Preserved"
+ lit_statute_legal_tradition: "Lithuanian Legal Tradition"
+ lit_administrative_excellence: "Administrative Excellence"
+ lit_amber_trade_dominance: "Amber Trade Dominance"
+ lit_wealthy_treasury: "Prosperous Treasury"
